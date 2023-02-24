@@ -30,5 +30,12 @@
       ".",
       "Select a card to bottle for "
     ]
+  },
+  "TheLibrarian:TheInvitation": {
+    "NAME": "The Invitation",
+    "FLAVOR": "Dear Guest: I formally invite you to the library.\nThe Library's books can provide you with all the wisdom, wealth, honor, and power you seek.\nHowever, an ordeal will await you in the library.\nIf you cannot overcome this ordeal, you will be converted into a book yourself.?",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add a #yEmptyBook into your hand."
+    ]
   }
 }

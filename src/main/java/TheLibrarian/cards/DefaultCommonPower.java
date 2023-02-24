@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.characters.TheLibrarian;
-import TheLibrarian.powers.CommonBook
+import TheLibrarian.powers.CommonBook;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
@@ -55,6 +55,8 @@ public class DefaultCommonPower extends AbstractDynamicCard {
     public DefaultCommonPower() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = MAGIC;
+
+
     }
 
 

@@ -1,5 +1,6 @@
 package TheLibrarian;
 
+import TheLibrarian.relics.*;
 import basemod.*;
 import basemod.eventUtil.AddEventParams;
 import basemod.helpers.RelicType;
@@ -24,10 +25,6 @@ import TheLibrarian.cards.*;
 import TheLibrarian.characters.TheLibrarian;
 import TheLibrarian.events.IdentityCrisisEvent;
 import TheLibrarian.potions.PlaceholderPotion;
-import TheLibrarian.relics.BottledPlaceholderRelic;
-import TheLibrarian.relics.DefaultClickableRelic;
-import TheLibrarian.relics.PlaceholderRelic;
-import TheLibrarian.relics.PlaceholderRelic2;
 import TheLibrarian.util.IDCheckDontTouchPls;
 import TheLibrarian.util.TextureLoader;
 import TheLibrarian.variables.DefaultCustomVariable;
@@ -396,7 +393,7 @@ public class TheLibrarianMod implements
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheLibrarian.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheLibrarian.Enums.COLOR_GRAY);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheLibrarian.Enums.COLOR_GRAY);
-        
+        BaseMod.addRelicToCustomPool(new TheInvitation(), TheLibrarian.Enums.COLOR_GRAY);
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
         

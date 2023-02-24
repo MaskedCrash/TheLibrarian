@@ -56,6 +56,11 @@
   },
   "TheLibrarian:SkimCollection": {
     "NAME": "Skim Collection",
-    "DESCRIPTION": "Put !M! card from your draw pile into your hand.\n\nThis card costs Anthology [E] less."
+    "DESCRIPTION": "Put !M! card from your draw pile into your hand. \n\nThis card costs Anthology [E] less.",
+    "UPGRADE_DESCRIPTION": "Put !M! cards from your draw pile into your hand. \n\nThis card costs Anthology [E] less."
+  },
+  "TheLibrarian:SkimCollection": {
+    "NAME": "Empty Book",
+    "DESCRIPTION": "Deal !D! damage.\n\nIf Fatal, gain an additional card reward at the end of combat."
   }
 }

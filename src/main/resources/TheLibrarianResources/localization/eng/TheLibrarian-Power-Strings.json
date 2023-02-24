@@ -1,7 +1,7 @@
 {
-"TheLibrarian:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+"TheLibrarian:CommonBook": {
+        "NAME": "A Book of a Common Enemy",
+        "DESCRIPTIONS": ["At the end of combat, gain #b", "card reward.", " card reward."]
 },
 "TheLibrarian:RarePower": {
         "NAME": "Placeholder Power",

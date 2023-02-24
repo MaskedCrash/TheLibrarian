@@ -13,13 +13,17 @@ TheLibrarian\TheLibrarianMod.class
 TheLibrarian\patches\DefaultInsertPatch$Locator.class
 TheLibrarian\relics\BottledPlaceholderRelic.class
 TheLibrarian\patches\relics\BottledPlaceholderField.class
+TheLibrarian\powers\CommonBook.class
+TheLibrarian\actions\BookingAction.class
 TheLibrarian\cards\AbstractDynamicCard.class
+TheLibrarian\cards\EmptyBook.class
 TheLibrarian\cards\DefaultSecondMagicNumberSkill.class
 TheLibrarian\cards\DefaultCommonSkill.class
 TheLibrarian\events\IdentityCrisisEvent.class
 TheLibrarian\orbs\DefaultOrb.class
 TheLibrarian\cards\DefaultUncommonAttack.class
 TheLibrarian\cards\CardTemplate.class
+TheLibrarian\relics\TheInvitation.class
 TheLibrarian\relics\PlaceholderRelic.class
 TheLibrarian\cards\DefaultAttackWithVariable.class
 TheLibrarian\cards\DefaultRarePower.class
@@ -32,4 +36,3 @@ TheLibrarian\cards\DefaultRareAttack.class
 TheLibrarian\cards\DefaultUncommonSkill.class
 TheLibrarian\relics\DefaultClickableRelic.class
 TheLibrarian\cards\AbstractDefaultCard.class
-TheLibrarian\powers\CommonPower.class

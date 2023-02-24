@@ -1,10 +1,13 @@
 package TheLibrarian.relics;
 
 import TheLibrarian.TheLibrarianMod;
+import TheLibrarian.cards.EmptyBook;
 import TheLibrarian.util.TextureLoader;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 
 import static TheLibrarian.TheLibrarianMod.makeRelicOutlinePath;
 import static TheLibrarian.TheLibrarianMod.makeRelicPath;
@@ -18,7 +21,7 @@ public class TheInvitation extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = TheLibrarianMod.makeID("PlaceholderRelic");
+    public static final String ID = TheLibrarianMod.makeID("TheInvitation");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
@@ -29,20 +32,11 @@ public class TheInvitation extends CustomRelic {
 
     // Flash at the start of Battle.
     @Override
+
+
     public void atBattleStartPreDraw() {
         flash();
-    }
-
-    // Gain 1 energy on equip.
-    @Override
-    public void onEquip() {
-        AbstractDungeon.player.energy.energyMaster += 1;
-    }
-
-    // Lose 1 energy on unequip.
-    @Override
-    public void onUnequip() {
-        AbstractDungeon.player.energy.energyMaster -= 1;
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EmptyBook(), 1, false));
     }
 
     // Description
