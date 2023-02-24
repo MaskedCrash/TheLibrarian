@@ -1,0 +1,61 @@
+{
+  "TheLibrarian:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "TheLibrarian:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL thelibrarian:Multiword_Keyword."
+  },
+  "TheLibrarian:Curiosity": {
+    "NAME": "Curiosity",
+    "DESCRIPTION": "Discard your hand, NL then draw cards equal to your thelibrarian:Anthology."
+  },
+  "TheLibrarian:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! thelibrarian:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! thelibrarian:Keywords."
+  },
+  "TheLibrarian:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "TheLibrarian:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "TheLibrarian:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X thelibrarian:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 thelibrarian:Keywords."
+  },
+  "TheLibrarian:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "TheLibrarian:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "TheLibrarian:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "TheLibrarian:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !TheLibrarian:ENERGY_DAMAGE! damage total.)"
+  },
+  "TheLibrarian:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !TheLibrarian:SecondMagic! poison to an enemy."
+  },
+  "TheLibrarian:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "TheLibrarian:SkimCollection": {
+    "NAME": "Skim Collection",
+    "DESCRIPTION": "Put !M! card from your draw pile into your hand.\n\nThis card costs Anthology [E] less."
+  }
+}
