@@ -3,6 +3,7 @@ package TheLibrarian.characters;
 import TheLibrarian.relics.TheInvitation;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
+import basemod.patches.com.megacrit.cardcrawl.screens.SingleCardViewPopup.OpenFix;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -184,6 +185,10 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(SkimCollection.ID);
         retVal.add(Curiosity.ID);
         retVal.add(TodaysExpression.ID);
+        retVal.add(OpenedCanofWellCheers.ID);
+        for(int x=0; x<30;x++){
+            retVal.add(OpenedCanofWellCheers.ID);
+        }
         return retVal;
     }
 

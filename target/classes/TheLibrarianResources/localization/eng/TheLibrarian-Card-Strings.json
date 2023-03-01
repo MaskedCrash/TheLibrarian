@@ -66,5 +66,33 @@
   "TheLibrarian:TodaysExpression": {
     "NAME": "Today's Expression",
     "DESCRIPTION": "Anthology: Gain !B! Block."
+  },
+  "TheLibrarian:HeartOfAspiration": {
+    "NAME": "Heart Of Aspiration",
+    "DESCRIPTION": "Gain !M! Strength. \n\n This is a placeholder effect."
+  },
+  "TheLibrarian:FariesCare": {
+    "NAME": "Fairies' Care",
+    "DESCRIPTION": "Gain 1 plus Anthology Regen. \n\n This is a placeholder effect."
+  },
+  "TheLibrarian:OpenedCanofWellCheers": {
+    "NAME": "Opened Can of WellCheers",
+    "DESCRIPTION": "Get a potion. Exhaust. \n\n Anthology: Get an additional choice of potion."
+  },
+  "TheLibrarian:WellcheerBlueCan": {
+    "NAME": "A Blue Can",
+    "DESCRIPTION": "Get a Swift Potion."
+  },
+  "TheLibrarian:WellcheerRedCan": {
+    "NAME": "A Red Can",
+    "DESCRIPTION": "Get an Attack Potion."
+  },
+  "TheLibrarian:WellcheerPurpleCan": {
+    "NAME": "A Purple Can",
+    "DESCRIPTION": "Get a Regen Potion."
+  },
+  "TheLibrarian:WellcheerOddCan": {
+    "NAME": "An Opened Can",
+    "DESCRIPTION": "Get a Smoke Bomb."
   }
 }
