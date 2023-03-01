@@ -21,6 +21,7 @@ TheLibrarian\cards\DefaultSecondMagicNumberSkill.class
 TheLibrarian\cards\DefaultCommonSkill.class
 TheLibrarian\events\IdentityCrisisEvent.class
 TheLibrarian\orbs\DefaultOrb.class
+TheLibrarian\cards\TodaysExpression.class
 TheLibrarian\cards\DefaultUncommonAttack.class
 TheLibrarian\cards\CardTemplate.class
 TheLibrarian\relics\TheInvitation.class

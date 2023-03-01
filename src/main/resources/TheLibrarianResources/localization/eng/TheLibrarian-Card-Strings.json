@@ -56,11 +56,23 @@
   },
   "TheLibrarian:SkimCollection": {
     "NAME": "Skim Collection",
-    "DESCRIPTION": "Put !M! card from your draw pile into your hand. \n\nThis card costs Anthology [E] less.",
-    "UPGRADE_DESCRIPTION": "Put !M! cards from your draw pile into your hand. \n\nThis card costs Anthology [E] less."
+    "DESCRIPTION": "Put !M! card from your draw pile into your hand. \n\nAnthology:Costs [E] less.",
+    "UPGRADE_DESCRIPTION": "Put !M! cards from your draw pile into your hand. \n\nAnthology:Costs [E] less."
   },
-  "TheLibrarian:SkimCollection": {
+  "TheLibrarian:EmptyBook": {
     "NAME": "Empty Book",
     "DESCRIPTION": "Deal !D! damage.\n\nIf Fatal, gain an additional card reward at the end of combat."
+  },
+  "TheLibrarian:TodaysExpression": {
+    "NAME": "Today's Expression",
+    "DESCRIPTION": "Anthology: Gain !B! Block."
+  },
+  "TheLibrarian:HeartOfAspiration": {
+    "NAME": "Heart Of Aspiration",
+    "DESCRIPTION": "Gain !M! Strength. \n\n This is a placeholder effect."
+  },
+  "TheLibrarian:FariesCare": {
+    "NAME": "Fairies' Care",
+    "DESCRIPTION": "Gain 1 plus Anthology Regen. \n\n This is a placeholder effect."
   }
 }

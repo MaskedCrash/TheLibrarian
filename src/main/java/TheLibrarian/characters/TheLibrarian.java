@@ -174,6 +174,16 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(OrbSkill.ID);
         retVal.add(SkimCollection.ID);
         retVal.add(Curiosity.ID);
+        retVal.add(TodaysExpression.ID);
+        retVal.add(SkimCollection.ID);
+        retVal.add(Curiosity.ID);
+        retVal.add(TodaysExpression.ID);
+        retVal.add(SkimCollection.ID);
+        retVal.add(Curiosity.ID);
+        retVal.add(TodaysExpression.ID);
+        retVal.add(SkimCollection.ID);
+        retVal.add(Curiosity.ID);
+        retVal.add(TodaysExpression.ID);
         return retVal;
     }
 
