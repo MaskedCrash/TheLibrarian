@@ -186,9 +186,9 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(Curiosity.ID);
         retVal.add(TodaysExpression.ID);
         retVal.add(OpenedCanofWellCheers.ID);
-        for(int x=0; x<30;x++){
-            retVal.add(OpenedCanofWellCheers.ID);
-        }
+        //for(int x=0; x<30;x++){
+        //    retVal.add(OpenedCanofWellCheers.ID);
+        //}
         return retVal;
     }
 
