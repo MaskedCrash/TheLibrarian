@@ -23,7 +23,7 @@ public class TodaysExpression extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = TheLibrarianMod.makeID(TodaysExpression.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Today_s Expression.png");
 
     // /TEXT DECLARATION/
 

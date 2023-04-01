@@ -26,7 +26,7 @@ public class DreamOfABlackSwan extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = TheLibrarianMod.makeID(DreamOfABlackSwan.class.getSimpleName());
-    public static final String IMG = makeCardPath("Power.png");
+    public static final String IMG = makeCardPath("Loving Family.png");
 
     // /TEXT DECLARATION/
 
@@ -60,11 +60,11 @@ public class DreamOfABlackSwan extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int x=0; x<magicNumber; x++) {
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), magicNumber));
+                    new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber), magicNumber));
+                    new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new MetallicizePower(p, magicNumber), magicNumber));
+                    new ApplyPowerAction(p, p, new MetallicizePower(p, 1), 1));
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new DOBSStrongBrother(), 1));
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new DOBSHardyBrother(), 1));
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new DOBSQuickBrother(), 1));

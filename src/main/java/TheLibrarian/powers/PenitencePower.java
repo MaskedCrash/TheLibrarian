@@ -1,27 +1,25 @@
 package TheLibrarian.powers;
 
+import TheLibrarian.TheLibrarianMod;
+import TheLibrarian.util.TextureLoader;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import TheLibrarian.TheLibrarianMod;
-import TheLibrarian.util.TextureLoader;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static TheLibrarian.TheLibrarianMod.makePowerPath;
 
 //Get an extra common Card at the end of combat
 
-public class CommonBook extends AbstractPower implements CloneablePowerInterface {
+public class PenitencePower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
 
     public static final String POWER_ID = TheLibrarianMod.makeID("CommonBook");
@@ -34,7 +32,7 @@ public class CommonBook extends AbstractPower implements CloneablePowerInterface
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public CommonBook(final AbstractCreature owner, final AbstractCreature source, final int amount) {
+    public PenitencePower(final AbstractCreature owner, final AbstractCreature source, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
@@ -51,7 +49,12 @@ public class CommonBook extends AbstractPower implements CloneablePowerInterface
 
         updateDescription();
     }
-
+    public void onCardDraw(AbstractCard card) {
+        if (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE) {
+            flash();
+            addToBot(new GainBlockAction(this.owner, this.amount, Settings.FAST_MODE));
+        }
+    }
 
 
     // Note: If you want to apply an effect when a power is being applied you have 3 options:
@@ -91,6 +94,6 @@ public class CommonBook extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public AbstractPower makeCopy() {
-        return new CommonBook(owner, source, amount);
+        return new PenitencePower(owner, source, amount);
     }
 }

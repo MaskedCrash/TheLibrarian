@@ -99,8 +99,40 @@
     "NAME": "Barrier of Vines",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak to All enemies."
   },
-  "TheLibrarian:HappyMemories": {
-    "NAME": "Happy Memories",
-    "DESCRIPTION": "For each enemy, gain !B! Block and !M! Plated Armor."
+  "TheLibrarian:DreamOfABlackSwan": {
+    "NAME": "Dream of a Black Swan",
+    "DESCRIPTION": "Gain 2 Strength, Dexterity, and Metallicize. Shuffle 6 Brothers into your Discard."
+  },
+  "TheLibrarian:DOBSHardyBrother": {
+    "NAME": "A Hardy Brother",
+    "DESCRIPTION": "Lose 1 Metallicize. NL Draw a Card. NL Exhaust."
+  },
+  "TheLibrarian:DOBSQuickBrother": {
+    "NAME": "A Quick Brother",
+    "DESCRIPTION": "Lose 1 Dexterity. NL Draw a Card. NL Exhaust."
+  },
+  "TheLibrarian:DOBSStrongBrother": {
+    "NAME": "A Strong Brother",
+    "DESCRIPTION": "Lose 1 Strength. NL Draw a Card. NL Exhaust."
+  },
+  "TheLibrarian:Penitence": {
+    "NAME": "Penitence",
+    "DESCRIPTION": "When you draw a Status or Curse card, gain !M! block."
+  },
+  "TheLibrarian:MountainOfCorpses": {
+    "NAME": "Mountain of Corpses",
+    "DESCRIPTION": "Exhaust your discard pile. NL For every 5 cards exhausted, gain !M! health and Strength."
+  },
+  "TheLibrarian:DropBookcase": {
+    "NAME": "Drop Bookcase",
+    "DESCRIPTION": "Deal !D! damage. NL Anthology: Do it Again."
+  },
+  "TheLibrarian:Goodbye": {
+    "NAME": "GOODBYE",
+    "DESCRIPTION": "Deal !D! damage. NL Strength affects this card !M! times."
+  },
+  "TheLibrarian:Noise": {
+    "NAME": "Noise",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile on top of your draw pile."
   }
 }

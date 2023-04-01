@@ -5,11 +5,14 @@ TheLibrarian\cards\DefaultUncommonPower.class
 TheLibrarian\actions\UncommonPowerAction.class
 TheLibrarian\cards\Curiosity.class
 TheLibrarian\powers\RarePower.class
+TheLibrarian\powers\PenitencePower.class
+TheLibrarian\cards\DOBSStrongBrother.class
 TheLibrarian\potions\PlaceholderPotion.class
 TheLibrarian\util\IDCheckDontTouchPls.class
 TheLibrarian\patches\DefaultInsertPatch.class
 TheLibrarian\relics\PlaceholderRelic2.class
 TheLibrarian\TheLibrarianMod.class
+TheLibrarian\cards\DOBSHardyBrother.class
 TheLibrarian\patches\DefaultInsertPatch$Locator.class
 TheLibrarian\relics\BottledPlaceholderRelic.class
 TheLibrarian\patches\relics\BottledPlaceholderField.class
@@ -17,6 +20,7 @@ TheLibrarian\powers\CommonBook.class
 TheLibrarian\actions\BookingAction.class
 TheLibrarian\cards\AbstractDynamicCard.class
 TheLibrarian\cards\EmptyBook.class
+TheLibrarian\actions\MountainOCAction.class
 TheLibrarian\cards\DefaultSecondMagicNumberSkill.class
 TheLibrarian\cards\DefaultCommonSkill.class
 TheLibrarian\events\IdentityCrisisEvent.class
@@ -24,12 +28,17 @@ TheLibrarian\orbs\DefaultOrb.class
 TheLibrarian\cards\TodaysExpression.class
 TheLibrarian\cards\DefaultUncommonAttack.class
 TheLibrarian\cards\CardTemplate.class
+TheLibrarian\cards\HappyMemories.class
 TheLibrarian\relics\TheInvitation.class
+TheLibrarian\cards\MountainOfCorpses.class
+TheLibrarian\cards\DOBSQuickBrother.class
+TheLibrarian\cards\BarrierOfVines.class
 TheLibrarian\relics\PlaceholderRelic.class
 TheLibrarian\cards\DefaultAttackWithVariable.class
 TheLibrarian\cards\DefaultRarePower.class
 TheLibrarian\variables\DefaultCustomVariable.class
 TheLibrarian\variables\DefaultSecondMagicNumber.class
+TheLibrarian\cards\DreamOfABlackSwan.class
 TheLibrarian\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
 TheLibrarian\cards\DefaultCommonAttack.class
 TheLibrarian\cards\DefaultRareSkill.class
@@ -37,3 +46,4 @@ TheLibrarian\cards\DefaultRareAttack.class
 TheLibrarian\cards\DefaultUncommonSkill.class
 TheLibrarian\relics\DefaultClickableRelic.class
 TheLibrarian\cards\AbstractDefaultCard.class
+TheLibrarian\cards\Penitence.class

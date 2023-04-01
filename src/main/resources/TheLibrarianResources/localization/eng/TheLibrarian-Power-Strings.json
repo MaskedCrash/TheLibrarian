@@ -1,10 +1,18 @@
 {
-"TheLibrarian:CommonBook": {
-        "NAME": "A Book of a Common Enemy",
-        "DESCRIPTIONS": ["At the end of combat, gain #b", "card reward.", " card reward."]
-},
-"TheLibrarian:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+        "TheLibrarian:CommonBook": {
+                "NAME": "A Book of a Common Enemy",
+                "DESCRIPTIONS": ["At the end of combat, gain #b", " card reward.", " card rewards."]
+        },
+        "TheLibrarian:RarePower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+        },
+        "TheLibrarian:PenitencePower": {
+                "NAME": "Penitence",
+                "DESCRIPTIONS": ["When you draw a status or a curse, gain #b", " block." , " block."]
+        },
+        "TheLibrarian:Aspiration": {
+                "NAME": "Aspiration",
+                "DESCRIPTIONS": ["At the end of your turn, if you haven't played an attack that turn, shuffle ", " Wound into your draw pile." , " Wounds into your draw pile."]
+        }
 }

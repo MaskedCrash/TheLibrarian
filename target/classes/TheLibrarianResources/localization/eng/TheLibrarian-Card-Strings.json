@@ -56,12 +56,12 @@
   },
   "TheLibrarian:SkimCollection": {
     "NAME": "Skim Collection",
-    "DESCRIPTION": "Put !M! card from your draw pile into your hand. \n\nAnthology:Costs [E] less.",
-    "UPGRADE_DESCRIPTION": "Put !M! cards from your draw pile into your hand. \n\nAnthology:Costs [E] less."
+    "DESCRIPTION": "Put !M! card from your draw pile into your hand. NL Anthology:Costs [E] less.",
+    "UPGRADE_DESCRIPTION": "Put !M! cards from your draw pile into your hand. NL Anthology:Costs [E] less."
   },
   "TheLibrarian:EmptyBook": {
     "NAME": "Empty Book",
-    "DESCRIPTION": "Deal !D! damage.\n\nIf Fatal, gain an additional card reward at the end of combat."
+    "DESCRIPTION": "Deal !D! damage.NL If Fatal, gain an additional card reward at the end of combat."
   },
   "TheLibrarian:TodaysExpression": {
     "NAME": "Today's Expression",
@@ -69,15 +69,15 @@
   },
   "TheLibrarian:HeartOfAspiration": {
     "NAME": "Heart Of Aspiration",
-    "DESCRIPTION": "Gain !M! Strength. \n\n This is a placeholder effect."
+    "DESCRIPTION": "Gain !M! Strength. NL This is a placeholder effect."
   },
   "TheLibrarian:FariesCare": {
     "NAME": "Fairies' Care",
-    "DESCRIPTION": "Gain 1 plus Anthology Regen. \n\n This is a placeholder effect."
+    "DESCRIPTION": "Gain 1 plus Anthology Regen. NL This is a placeholder effect."
   },
   "TheLibrarian:OpenedCanofWellCheers": {
     "NAME": "Opened Can of WellCheers",
-    "DESCRIPTION": "Get a potion. Exhaust. \n\n Anthology: Get an additional choice of potion."
+    "DESCRIPTION": "Get a potion. Exhaust. NL Anthology: Get an additional choice of potion."
   },
   "TheLibrarian:WellcheerBlueCan": {
     "NAME": "A Blue Can",
@@ -94,5 +94,27 @@
   "TheLibrarian:WellcheerOddCan": {
     "NAME": "An Opened Can",
     "DESCRIPTION": "Get a Smoke Bomb."
+  },
+  "TheLibrarian:BarrierOfVines": {
+    "NAME": "Barrier of Vines",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak to All enemies."
+  },
+  "TheLibrarian:DreamOfABlackSwan": {
+    "NAME": "Dream of a Black Swan",
+    "DESCRIPTION": "Gain 2 Strength, Dexterity, and Metallicize. Shuffle 6 Brothers into your Discard."
+  },
+  "TheLibrarian:DOBSHardyBrother": {
+    "NAME": "A Hardy Brother",
+    "DESCRIPTION": "Lose 1 Metallicize. NL Draw a Card. NL Exhaust."
+  },
+  "TheLibrarian:DOBSQuickBrother": {
+    "NAME": "A Quick Brother",
+    "DESCRIPTION": "Lose 1 Dexterity. NL Draw a Card. NL Exhaust."
+  },"TheLibrarian:DOBSStrongBrother": {
+    "NAME": "A Strong Brother",
+    "DESCRIPTION": "Lose 1 Strength. NL Draw a Card. NL Exhaust."
+  },"TheLibrarian:Penitence": {
+    "NAME": "Penitence",
+    "DESCRIPTION": "When you draw a Status or Curse card, gain !M! block."
   }
 }

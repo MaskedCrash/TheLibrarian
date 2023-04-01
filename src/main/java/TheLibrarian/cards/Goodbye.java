@@ -1,5 +1,7 @@
 package TheLibrarian.cards;
 
+import TheLibrarian.TheLibrarianMod;
+import TheLibrarian.characters.TheLibrarian;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -7,47 +9,47 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
-import TheLibrarian.TheLibrarianMod;
-import TheLibrarian.characters.TheLibrarian;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
-public class DefaultRareAttack extends AbstractDynamicCard {
+public class Goodbye extends AbstractDynamicCard {
 
     /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * TOUCH Deal 30(35) damage.
+     * Heavy Blade but base power 5 and 8 multiplier on strength.
+     * GOODBYE.
      */
 
 
-    // TEXT DECLARATION 
+    // TEXT DECLARATION
 
-    public static final String ID = TheLibrarianMod.makeID(DefaultRareAttack.class.getSimpleName());
+    public static final String ID = TheLibrarianMod.makeID(Goodbye.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     // /TEXT DECLARATION/
 
 
-    // STAT DECLARATION 	
+    // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheLibrarian.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 3;
 
-    private static final int DAMAGE = 30;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int DAMAGE = 5;
+    private static final int MAGIC = 8;
+    private static final int MAGIC_UPGRADE = 2;
 
     // /STAT DECLARATION/
 
 
-    public DefaultRareAttack() {
+    public Goodbye() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = MAGIC;
     }
 
 
@@ -57,10 +59,25 @@ public class DefaultRareAttack extends AbstractDynamicCard {
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
         }
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.NONE));
+            addToBot((AbstractGameAction)new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
 
+    public void applyPowers() {
+        AbstractPower strength = AbstractDungeon.player.getPower("Strength");
+        if (strength != null)
+            strength.amount *= this.magicNumber;
+        super.applyPowers();
+        if (strength != null)
+            strength.amount /= this.magicNumber;
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        AbstractPower strength = AbstractDungeon.player.getPower("Strength");
+        if (strength != null)
+            strength.amount *= this.magicNumber;
+        super.calculateCardDamage(mo);
+        if (strength != null)
+            strength.amount /= this.magicNumber;
     }
 
     //Upgraded stats.
@@ -68,7 +85,7 @@ public class DefaultRareAttack extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(MAGIC_UPGRADE);
         }
     }
 }

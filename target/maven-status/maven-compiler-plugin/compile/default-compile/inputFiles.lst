@@ -1,3 +1,4 @@
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DOBSQuickBrother.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\AbstractDefaultCard.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\events\IdentityCrisisEvent.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\patches\relics\BottledPlaceholderField.java
@@ -8,9 +9,13 @@ C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\OrbSkill.ja
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\potions\PlaceholderPotion.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\util\IDCheckDontTouchPls.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DefaultUncommonAttack.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\Penitence.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\actions\BookingAction.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\HappyMemories.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\TheLibrarianMod.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\actions\SchadenfreudeAction.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DOBSHardyBrother.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DOBSStrongBrother.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\WellcheerPurpleCan.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DefaultCommonPower.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\HeartOfAspiration.java
@@ -18,6 +23,7 @@ C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\CardTemplat
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DefaultUncommonPower.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DefaultRareAttack.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\FariesCare.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\powers\PenitencePower.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\util\TextureLoader.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\WellcheerRedCan.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\relics\BottledPlaceholderRelic.java
@@ -26,9 +32,13 @@ C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\LightForm.j
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\variables\DefaultCustomVariable.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\variables\DefaultSecondMagicNumber.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DefaultRareSkill.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\actions\MountainOCAction.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\AbstractDynamicCard.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\relics\PlaceholderRelic2.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\BarrierOfVines.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\characters\TheLibrarian.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\DreamOfABlackSwan.java
+C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\cards\MountainOfCorpses.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\powers\LightFormPower.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\relics\DefaultClickableRelic.java
 C:\Users\Crash\Desktop\TheLibrarian\src\main\java\TheLibrarian\relics\PlaceholderRelic.java

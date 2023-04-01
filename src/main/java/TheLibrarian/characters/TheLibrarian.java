@@ -158,21 +158,6 @@ public class TheLibrarian extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
-
-        retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
         retVal.add(SkimCollection.ID);
         retVal.add(Curiosity.ID);
         retVal.add(TodaysExpression.ID);
@@ -186,9 +171,14 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(Curiosity.ID);
         retVal.add(TodaysExpression.ID);
         retVal.add(OpenedCanofWellCheers.ID);
-        //for(int x=0; x<30;x++){
-        //    retVal.add(OpenedCanofWellCheers.ID);
-        //}
+        retVal.add(Penitence.ID);
+        retVal.add(FariesCare.ID);
+        retVal.add(DreamOfABlackSwan.ID);
+
+
+        for(int x=0; x<30;x++){
+            retVal.add(MountainOfCorpses.ID);
+        }
         return retVal;
     }
 
