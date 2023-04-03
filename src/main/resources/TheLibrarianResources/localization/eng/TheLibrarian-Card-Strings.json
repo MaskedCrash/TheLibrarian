@@ -134,5 +134,6 @@
   "TheLibrarian:Noise": {
     "NAME": "Noise",
     "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile on top of your draw pile."
-  }
+  },
+
 }
