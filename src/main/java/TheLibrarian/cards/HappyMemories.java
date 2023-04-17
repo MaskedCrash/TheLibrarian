@@ -50,7 +50,7 @@ public class HappyMemories extends AbstractDynamicCard {
     public HappyMemories() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        magicNumber = PLATED_ARMOR;
+        baseMagicNumber = magicNumber = PLATED_ARMOR;
 
     }
 

@@ -49,7 +49,7 @@ public class Goodbye extends AbstractDynamicCard {
     public Goodbye() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = MAGIC;
+        baseMagicNumber = magicNumber = MAGIC;
     }
 
 

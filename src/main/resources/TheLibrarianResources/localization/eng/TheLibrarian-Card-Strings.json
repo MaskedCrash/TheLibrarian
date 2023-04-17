@@ -135,5 +135,30 @@
     "NAME": "Noise",
     "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile on top of your draw pile."
   },
+  "TheLibrarian:FullStopOffice": {
+    "NAME": "Full Stop",
+    "DESCRIPTION": "Deal !D! Damage, Inflict 1 Weak NL Invitation (4 Attacks): Inflict 2 Weak"
+  },
+  "TheLibrarian:MemoriesOfApril23rd": {
+    "NAME": "Memories Of April 23rd",
+    "DESCRIPTION": "At the end of your turn, play !M! attack that you played that turn.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, play !M! attacks that you played that turn."
+  },
+  "TheLibrarian:DistortedBlade": {
+    "NAME": "Distorted Blade",
+    "DESCRIPTION": "Deal !D! Damage. NL Invitation (3 Attacks, 3 Skills, 1 Power): Then deal !D! damage to ALL Enemies."
+  },
+  "TheLibrarian:AlertStrike":{
+    "NAME": "Alert Strike",
+    "DESCRIPTION": "Deal !D! Damage. NL Anthology Inflict !M! Vulnerable."
+  },
+  "TheLibrarian:Clone":{
+    "NAME": "Clone",
+    "DESCRIPTION": "Deal !D! Damage. NL Copy a card in your hand."
+  },
+  "TheLibrarian:HappyMemories":{
+    "NAME": "HappyMemories",
+    "DESCRIPTION": "For each enemy, gain !B! block and !M! Plated Armor."
+  }
 
 }

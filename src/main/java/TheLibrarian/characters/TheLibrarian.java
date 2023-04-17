@@ -174,11 +174,12 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(Penitence.ID);
         retVal.add(FariesCare.ID);
         retVal.add(DreamOfABlackSwan.ID);
-
-
-        for(int x=0; x<30;x++){
-            retVal.add(MountainOfCorpses.ID);
-        }
+        retVal.add(MemoriesOfApril23rd.ID);
+        retVal.add(Goodbye.ID);
+        retVal.add(DistortedBlade.ID);
+        retVal.add(DropBookcase.ID);
+        retVal.add(Clone.ID);
+        retVal.add(AlertStrike.ID);
         return retVal;
     }
 

@@ -14,5 +14,9 @@
         "TheLibrarian:Aspiration": {
                 "NAME": "Aspiration",
                 "DESCRIPTIONS": ["At the end of your turn, if you haven't played an attack that turn, shuffle ", " Wound into your draw pile." , " Wounds into your draw pile."]
+        },
+        "TheLibrarian:April23rd": {
+                "NAME": "Memories",
+                "DESCRIPTIONS": ["At the end of your turn,  play ", " attack you played that turn." , " attacks you played that turn."]
         }
 }

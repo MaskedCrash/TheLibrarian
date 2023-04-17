@@ -87,7 +87,7 @@ public class Clone extends CustomCard {
         // Just type this.base and let intelliJ auto complete for you, or, go read up AbstractCard
 
         baseDamage = DAMAGE;
-        magicNumber = 1;
+        baseMagicNumber = magicNumber = 1;
 
     }
 
