@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+import static TheLibrarian.util.anthologyMath.anthology;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static java.lang.Math.min;
 
@@ -71,7 +72,7 @@ public class OpenedCanofWellCheers extends AbstractDynamicCard {
         drinkList.add(new WellcheerOddCan());
         Collections.shuffle(drinkList);
         ArrayList<AbstractCard> drinkChoices = new ArrayList<>();
-        for (int x = 0; x< min((player.masterDeck.size()/10),4);x++){
+        for (int x = 0; x< min(anthology(),4);x++){
             drinkChoices.add(drinkList.get(x));
         }
         if(player.masterDeck.size()/10!=0) {

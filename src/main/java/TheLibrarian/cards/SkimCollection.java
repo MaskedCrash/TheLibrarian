@@ -10,6 +10,7 @@ import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.characters.TheLibrarian;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+import static TheLibrarian.util.anthologyMath.anthology;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static java.lang.Math.max;
 
@@ -45,7 +46,7 @@ public class SkimCollection extends AbstractDynamicCard {
 
 
     public void applyPowers() {
-        this.costForTurn=max((COST-player.masterDeck.size()/10),0);
+        this.costForTurn=max(anthology(),0);
         super.applyPowers();
     }
 

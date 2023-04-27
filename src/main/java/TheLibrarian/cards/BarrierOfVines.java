@@ -49,7 +49,7 @@ public class BarrierOfVines extends AbstractDynamicCard {
     public BarrierOfVines() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
-        magicNumber = WEAK_AMOUNT;
+        baseMagicNumber=magicNumber = WEAK_AMOUNT;
 
     }
 

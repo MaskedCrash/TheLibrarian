@@ -15,9 +15,7 @@ import static TheLibrarian.TheLibrarianMod.makeCardPath;
 public class Noise extends AbstractDynamicCard {
 
     /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Big Slap Deal 10(15)) damage.
+     * Deals damage, moves a card to library.
      */
 
     // TEXT DECLARATION

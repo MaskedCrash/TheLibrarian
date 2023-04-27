@@ -1,7 +1,7 @@
 {
-  "modid": "DefaultMod",
+  "modid": "LibrarianMod",
   "name": "The Librarian",
-  "author_list": ["NotGremious"],
+  "author_list": ["Crash"],
   "credits": "Basemod, ModTheSpire, #modding",
   "description": "A default base to start your own mod from.",
   "version": "0.0.1",

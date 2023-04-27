@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+import static TheLibrarian.util.anthologyMath.anthology;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class TodaysExpression extends AbstractDynamicCard {
@@ -47,13 +48,13 @@ public class TodaysExpression extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
 
-        this.tags.add(CardTags.STARTER_DEFEND); //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly.
+
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i = 0; i<(player.masterDeck.size()/10);i++){
+        for(int i = 0; i<(anthology());i++){
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         }
     }

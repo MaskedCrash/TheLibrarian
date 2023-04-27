@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+import static TheLibrarian.util.anthologyMath.anthology;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 import static java.lang.Math.min;
 
@@ -77,7 +78,7 @@ public class AlertStrike extends AbstractDynamicCard {
                         // I.e. i want energy gain or card draw, lemme check out Adrenaline
                         // P.s. if you want to damage ALL enemies OUTSIDE of a card, check out the custom orb.
                         AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)); // The animation the damage action uses to hit.
-        for (int x = 0; x< (player.masterDeck.size()/10);x++){
+        for (int x = 0; x< anthology();x++){
             addToBot((AbstractGameAction)new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
 
         }

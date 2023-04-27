@@ -45,6 +45,9 @@ public class TrashDisposal extends AbstractDynamicCard {
     private static final int COST = 2;
     private static final int ATTACK_COUNT=6;
     private static final int DAMAGE = 0;
+    private static final int MAGIC = 2;
+    private static final int MAGIC_UP = 1;
+
 
     // /STAT DECLARATION/
 
@@ -52,6 +55,7 @@ public class TrashDisposal extends AbstractDynamicCard {
     public TrashDisposal() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = MAGIC;
     }
 
 
@@ -78,6 +82,7 @@ public class TrashDisposal extends AbstractDynamicCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
+            upgradeMagicNumber(1);
             upgradeName();
 
         }

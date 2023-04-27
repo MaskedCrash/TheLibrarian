@@ -11,6 +11,7 @@ import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.characters.TheLibrarian;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+import static TheLibrarian.util.anthologyMath.anthology;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class Curiosity extends AbstractDynamicCard {
@@ -58,7 +59,7 @@ public class Curiosity extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int cardsToDraw = player.masterDeck.size()/10;
+        int cardsToDraw = anthology();
         int theSize = AbstractDungeon.player.hand.size();
         AbstractDungeon.actionManager.addToBottom(new DiscardAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature) AbstractDungeon.player, theSize, false));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(cardsToDraw));

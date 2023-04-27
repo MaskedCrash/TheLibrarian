@@ -1,5 +1,6 @@
 package TheLibrarian.cards;
 
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -8,6 +9,10 @@ import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.characters.TheLibrarian;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
+
+
+
+
 
 public class DefaultCommonSkill extends AbstractDynamicCard {
 

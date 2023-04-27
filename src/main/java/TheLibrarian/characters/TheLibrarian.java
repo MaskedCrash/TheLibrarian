@@ -158,28 +158,19 @@ public class TheLibrarian extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(SkimCollection.ID);
-        retVal.add(Curiosity.ID);
-        retVal.add(TodaysExpression.ID);
-        retVal.add(SkimCollection.ID);
-        retVal.add(Curiosity.ID);
-        retVal.add(TodaysExpression.ID);
-        retVal.add(SkimCollection.ID);
-        retVal.add(Curiosity.ID);
-        retVal.add(TodaysExpression.ID);
-        retVal.add(SkimCollection.ID);
-        retVal.add(Curiosity.ID);
-        retVal.add(TodaysExpression.ID);
-        retVal.add(OpenedCanofWellCheers.ID);
-        retVal.add(Penitence.ID);
-        retVal.add(FariesCare.ID);
-        retVal.add(DreamOfABlackSwan.ID);
-        retVal.add(MemoriesOfApril23rd.ID);
-        retVal.add(Goodbye.ID);
-        retVal.add(DistortedBlade.ID);
+        retVal.add(DefaultCommonAttack.ID);
+        retVal.add(DefaultCommonAttack.ID);
+        retVal.add(DefaultCommonAttack.ID);
+        retVal.add(DefaultCommonAttack.ID);
+        retVal.add(DefaultCommonSkill.ID);
+        retVal.add(DefaultCommonSkill.ID);
+        retVal.add(DefaultCommonSkill.ID);
+        retVal.add(DefaultCommonSkill.ID);
+        retVal.add(CombatPrep.ID);
         retVal.add(DropBookcase.ID);
-        retVal.add(Clone.ID);
-        retVal.add(AlertStrike.ID);
+
+
+
         return retVal;
     }
 

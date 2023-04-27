@@ -1,11 +1,11 @@
 {
   "TheLibrarian:DefaultCommonAttack": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+    "DESCRIPTION": "Deal !D! damage."
   },
   "TheLibrarian:DefaultCommonSkill": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL thelibrarian:Multiword_Keyword."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "TheLibrarian:Curiosity": {
     "NAME": "Curiosity",
@@ -13,7 +13,7 @@
   },
   "TheLibrarian:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! thelibrarian:Keyword.",
+    "DESCRIPTION": "Gain !M! thelibrarian:Keyword.  NL thelibrarian:Multiword_Keyword.  NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]",
     "UPGRADE_DESCRIPTION": "Gain !M! thelibrarian:Keywords."
   },
   "TheLibrarian:DefaultUncommonAttack": {
@@ -61,7 +61,7 @@
   },
   "TheLibrarian:EmptyBook": {
     "NAME": "Empty Book",
-    "DESCRIPTION": "Deal !D! damage.NL If Fatal, gain an additional card reward at the end of combat."
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain an additional card reward at the end of combat."
   },
   "TheLibrarian:TodaysExpression": {
     "NAME": "Today's Expression",
@@ -73,11 +73,11 @@
   },
   "TheLibrarian:FariesCare": {
     "NAME": "Fairies' Care",
-    "DESCRIPTION": "Gain 1 plus Anthology Regen. NL This is a placeholder effect."
+    "DESCRIPTION": "Gain 1 plus thelibrarian:Anthology Regen. NL This is a placeholder effect."
   },
   "TheLibrarian:OpenedCanofWellCheers": {
     "NAME": "Opened Can of WellCheers",
-    "DESCRIPTION": "Get a potion. Exhaust. NL Anthology: Get an additional choice of potion."
+    "DESCRIPTION": "Get a potion. Exhaust. NL thelibrarian:Anthology: Get an additional choice of potion."
   },
   "TheLibrarian:WellcheerBlueCan": {
     "NAME": "A Blue Can",
@@ -125,7 +125,7 @@
   },
   "TheLibrarian:DropBookcase": {
     "NAME": "Drop Bookcase",
-    "DESCRIPTION": "Deal !D! damage. NL Anthology: Do it Again."
+    "DESCRIPTION": "Deal !D! damage. NL thelibrarian:Anthology: Do it Again."
   },
   "TheLibrarian:Goodbye": {
     "NAME": "GOODBYE",
@@ -137,28 +137,50 @@
   },
   "TheLibrarian:FullStopOffice": {
     "NAME": "Full Stop",
-    "DESCRIPTION": "Deal !D! Damage, Inflict 1 Weak NL Invitation (4 Attacks): Inflict 2 Weak"
+    "DESCRIPTION": "Deal !D! Damage, Inflict 1 Weak NL thelibrarian:Invitation (4 Attacks): Inflict 2 Weak"
   },
   "TheLibrarian:MemoriesOfApril23rd": {
     "NAME": "Memories Of April 23rd",
-    "DESCRIPTION": "At the end of your turn, play !M! attack that you played that turn.",
-    "UPGRADE_DESCRIPTION": "At the end of your turn, play !M! attacks that you played that turn."
+    "DESCRIPTION": "At the end of your turn, play !M! attack that you played this combat (WIP).",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, play !M! attacks that you played this combat (WIP)."
   },
   "TheLibrarian:DistortedBlade": {
     "NAME": "Distorted Blade",
-    "DESCRIPTION": "Deal !D! Damage. NL Invitation (3 Attacks, 3 Skills, 1 Power): Then deal !D! damage to ALL Enemies."
+    "DESCRIPTION": "Deal !D! Damage. NL thelibrarian:Invitation (3 Attacks, 3 Skills, 1 Power): Then deal !D! damage to ALL Enemies."
   },
   "TheLibrarian:AlertStrike":{
     "NAME": "Alert Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL Anthology Inflict !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! Damage. NL thelibrarian:Anthology Inflict !M! Vulnerable."
   },
   "TheLibrarian:Clone":{
     "NAME": "Clone",
     "DESCRIPTION": "Deal !D! Damage. NL Copy a card in your hand."
   },
   "TheLibrarian:HappyMemories":{
-    "NAME": "HappyMemories",
+    "NAME": "Happy Memories",
     "DESCRIPTION": "For each enemy, gain !B! block and !M! Plated Armor."
+  },
+  "TheLibrarian:CombatPrep":{
+    "NAME": "Combat Preparation",
+    "DESCRIPTION": "Gain !B! block. NL At the start of your next turn, Gain 1 [E]."
+  },
+  "TheLibrarian:DaCapoAlFine":{
+    "NAME": "Da Capo Al Fine",
+    "DESCRIPTION": "If the size of your draw pile is equal to or less than your thelibrarian:Anthology, Take another turn after this one and end the turn."
+  },
+  "TheLibrarian:FourthMatchFlame":{
+    "NAME": "Fourth Match Flame",
+    "DESCRIPTION": "Deal !D! damage, then shuffle a Burn and a copy of this card into your draw pile. NL Repeat for every burn in your draw pile. Exhaust."
+  },
+  "TheLibrarian:TrashDisposal":{
+    "NAME": "Trash Disposal",
+    "DESCRIPTION": "Deal !D! damage 6 times. theLibrarian:Invitation (3 Skills): Gain !M! Strength for this turn before attacking."
+  },
+  "TheLibrarian:Schadenfreude":{
+    "NAME": "Schadenfreude",
+    "DESCRIPTION": "If the enemy intends to attack, gain thorns. (WIP)"
+  },"TheLibrarian:WillOfThePrescript":{
+    "NAME": "Will Of The Prescript",
+    "DESCRIPTION": "Deal !D! damage. NL theLibrarian:Invitation (3 Attacks, 3 Skills): Draw 2 cards, and Draw 2 Additional Cards next turn."
   }
-
 }
