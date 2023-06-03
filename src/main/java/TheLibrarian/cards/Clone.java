@@ -38,11 +38,7 @@ public class Clone extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Attack.png");
-    // Setting the image as as easy as can possibly be now. You just need to provide the image name
-    // and make sure it's in the correct folder. That's all.
-    // There's makeCardPath, makeRelicPath, power, orb, event, etc..
-    // The list of all of them can be found in the main TheLibrarian.java file in the
-    // ==INPUT TEXTURE LOCATION== section under ==MAKE IMAGE PATHS==
+
 
 
     public static final String NAME = cardStrings.NAME;
@@ -95,17 +91,9 @@ public class Clone extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom( // The action managed queues all the actions a card should do.
-                // addToTop - first
-                // addToBottom - last
-                // 99.99% of the time you just want to addToBottom all of them.
-                // Please do that unless you need to add to top for some specific reason.
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn),
-                        // a list of existing actions can be found at com.megacrit.cardcrawl.actions but
-                        // Chances are you'd instead look at "hey my card is similar to this basegame card"
-                        // Let's find out what action *it* uses.
-                        // I.e. i want energy gain or card draw, lemme check out Adrenaline
-                        // P.s. if you want to damage ALL enemies OUTSIDE of a card, check out the custom orb.
-                        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)); // The animation the damage action uses to hit.
+
+                        AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot((AbstractGameAction)new CloneAction(p, this.magicNumber));
     }
 
