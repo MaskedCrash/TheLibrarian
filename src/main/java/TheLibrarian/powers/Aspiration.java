@@ -1,10 +1,16 @@
 package TheLibrarian.powers;
 
 import TheLibrarian.TheLibrarianMod;
+import TheLibrarian.cards.DOBSStrongBrother;
 import TheLibrarian.util.TextureLoader;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.GameActionManager;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.status.Wound;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 
 import static TheLibrarian.TheLibrarianMod.makePowerPath;
+import static com.megacrit.cardcrawl.cards.AbstractCard.CardType.ATTACK;
 
 //Get an extra common Card at the end of combat
 
@@ -47,8 +54,24 @@ public class Aspiration extends AbstractPower implements CloneablePowerInterface
         updateDescription();
     }
 
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (isPlayer) {
+            if(!attackPlayedThisTurn()) {
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Wound(), amount,true,true));
+                flash();
+            }
+        }
+    }
 
-
+    public boolean attackPlayedThisTurn(){
+        for(AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
+            if(c.type == ATTACK) {
+                return true;
+            }
+        }
+        return false;
+    }
     // Note: If you want to apply an effect when a power is being applied you have 3 options:
     //onInitialApplication is "When THIS power is first applied for the very first time only."
     //onApplyPower is "When the owner applies a power to something else (only used by Sadistic Nature)."

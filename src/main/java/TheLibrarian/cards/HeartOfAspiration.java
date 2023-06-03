@@ -3,6 +3,7 @@ package TheLibrarian.cards;
 import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.actions.UncommonPowerAction;
 import TheLibrarian.characters.TheLibrarian;
+import TheLibrarian.powers.Aspiration;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,7 +40,7 @@ public class HeartOfAspiration extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheLibrarian.Enums.COLOR_GRAY;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int MAGIC = 2;
 
     // /STAT DECLARATION/
@@ -57,6 +58,8 @@ public class HeartOfAspiration extends AbstractDynamicCard {
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,
                 p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,
+                p, new Aspiration(p,p, this.magicNumber), this.magicNumber));
     }
 
     //Upgraded stats.

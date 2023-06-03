@@ -1,6 +1,7 @@
 package TheLibrarian.cards;
 
 import TheLibrarian.powers.CommonBook;
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,6 +14,9 @@ import TheLibrarian.powers.CommonBook;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
+
+
+@AutoAdd.Ignore
 public class DefaultCommonPower extends AbstractDynamicCard {
 
     /*

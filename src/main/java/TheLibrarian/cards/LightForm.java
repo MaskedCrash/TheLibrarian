@@ -3,6 +3,7 @@ package TheLibrarian.cards;
 import TheLibrarian.TheLibrarianMod;
 import TheLibrarian.characters.TheLibrarian;
 import TheLibrarian.powers.RarePower;
+import basemod.AutoAdd;
 import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
+@AutoAdd.Ignore
 public class LightForm extends AbstractDynamicCard {
 
     /*
