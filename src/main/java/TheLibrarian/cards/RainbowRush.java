@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
 
-@AutoAdd.Ignore
+
 public class RainbowRush extends AbstractDynamicCard {
 
     /*

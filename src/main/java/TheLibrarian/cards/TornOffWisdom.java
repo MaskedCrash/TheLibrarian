@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
-
+@AutoAdd.Ignore
 public class TornOffWisdom extends AbstractDynamicCard {
 
     /*

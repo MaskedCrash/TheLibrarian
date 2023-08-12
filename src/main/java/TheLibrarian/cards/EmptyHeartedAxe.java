@@ -16,11 +16,12 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
 
-@AutoAdd.Ignore
+
 public class EmptyHeartedAxe extends AbstractDynamicCard {
 
     /*
      * Empty Hearted Axe
+     * Deal 22(8) damage, reduced by 6 for each energy you have after playing.
      */
 
     // TEXT DECLARATION

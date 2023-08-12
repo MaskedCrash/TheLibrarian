@@ -37,5 +37,12 @@
     "DESCRIPTIONS": [
       "At the start of each combat, add a #yEmptyBook into your hand."
     ]
+  },
+  "TheLibrarian:WCorpBattery": {
+    "NAME": "W Corp Battery",
+    "FLAVOR": "As a matter of fact, the alley is an open one.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E]. Lose #b1 [E] for each time you've exhausted your draw pile."
+    ]
   }
 }

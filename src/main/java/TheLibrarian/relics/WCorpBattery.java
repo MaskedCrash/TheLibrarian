@@ -31,7 +31,7 @@ public class WCorpBattery extends CustomRelic {
     }
 
 
-    // Gain 1 Strength on on equip.
+
     @Override
     public void atBattleStart() {
         flash();

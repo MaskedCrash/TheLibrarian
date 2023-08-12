@@ -1,24 +1,24 @@
 package TheLibrarian.cards;
 
 import TheLibrarian.TheLibrarianMod;
+import TheLibrarian.actions.FerventAction;
+import TheLibrarian.actions.SchadenfreudeAction;
 import TheLibrarian.characters.TheLibrarian;
-import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 
 import static TheLibrarian.TheLibrarianMod.makeCardPath;
 
-
-@AutoAdd.Ignore
-public class FerventAdoration extends AbstractDynamicCard {
+public class FerventAdoration extends AbstractDynamicCard{
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
      *
-     * A Better Defend Gain 1 Plated Armor. Affected by Dexterity.
+     * Force a creature to attack all enemies
      */
 
     // TEXT DECLARATION
@@ -36,24 +36,24 @@ public class FerventAdoration extends AbstractDynamicCard {
     public static final CardColor COLOR = TheLibrarian.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int UPGRADE_REDUCED_COST = 0;
 
-    private static final int BLOCK = 1;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
+
+    private static final int MAGIC = 2;
+    private static final int UPGRADE_REDUCED_COST = 0;
 
     // /STAT DECLARATION/
 
 
     public FerventAdoration() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseBlock = BLOCK;
+
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new PlatedArmorPower(p, block), block));
+                new FerventAction(m));
     }
 
     // Upgraded stats.
@@ -61,7 +61,6 @@ public class FerventAdoration extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeBaseCost(UPGRADE_REDUCED_COST);
             initializeDescription();
         }

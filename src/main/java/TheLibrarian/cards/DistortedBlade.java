@@ -73,8 +73,7 @@ public class DistortedBlade extends AbstractDynamicCard {
 
 
         if(invitationCheck(3,3,1)){
-
-            addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         }
 
     }

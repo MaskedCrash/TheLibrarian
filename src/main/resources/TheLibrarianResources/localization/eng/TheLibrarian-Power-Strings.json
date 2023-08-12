@@ -18,5 +18,20 @@
         "TheLibrarian:April23rd": {
                 "NAME": "Memories",
                 "DESCRIPTIONS": ["At the end of your turn,  play ", " attack you played that turn." , " attacks you played that turn."]
+        },"TheLibrarian:BulletTracker": {
+                "NAME": "Bullets",
+                "DESCRIPTIONS": ["You've fired #b", " bullet." , " bullets."]
+        },"TheLibrarian:Scars": {
+                "NAME": "Scars",
+                "DESCRIPTIONS": ["When you take health damage, gain #b", " block next turn." , "block next turn."]
+        },"TheLibrarian:PebblePower": {
+                "NAME": "Token of Friendship",
+                "DESCRIPTIONS": ["When you draw a status, gain #b", " health." , " health."]
+        },"TheLibrarian:SporePower": {
+                "NAME": "Spore",
+                "DESCRIPTIONS": ["When attacked, inflict #b", " damage AND poison to the attacker." ]
+        },"TheLibrarian:TourGuidePower": {
+                "NAME": "Steam Transport Machine",
+                "DESCRIPTIONS": ["After you draw your first hand, draw ", " additional card, prioritizing types you have the least of.", " additional cards, prioritizing types you have the least of."  ]
         }
 }

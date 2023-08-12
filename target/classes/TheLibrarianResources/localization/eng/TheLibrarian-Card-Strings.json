@@ -65,7 +65,7 @@
   },
   "TheLibrarian:TodaysExpression": {
     "NAME": "Today's Expression",
-    "DESCRIPTION": "Anthology: Gain !B! Block."
+    "DESCRIPTION": "thelibrarian:Anthology: Gain !B! Block."
   },
   "TheLibrarian:HeartOfAspiration": {
     "NAME": "Heart Of Aspiration",
@@ -174,13 +174,61 @@
   },
   "TheLibrarian:TrashDisposal":{
     "NAME": "Trash Disposal",
-    "DESCRIPTION": "Deal !D! damage 6 times. theLibrarian:Invitation (3 Skills): Gain !M! Strength for this turn before attacking."
+    "DESCRIPTION": "Deal !D! damage 6 times. thelibrarian:Invitation (3 Skills): Gain !M! Strength for this turn before attacking."
   },
   "TheLibrarian:Schadenfreude":{
     "NAME": "Schadenfreude",
     "DESCRIPTION": "If the enemy intends to attack, gain thorns. (WIP)"
   },"TheLibrarian:WillOfThePrescript":{
     "NAME": "Will Of The Prescript",
-    "DESCRIPTION": "Deal !D! damage. NL theLibrarian:Invitation (3 Attacks, 3 Skills): Draw 2 cards, and Draw 2 Additional Cards next turn."
+    "DESCRIPTION": "Deal !D! damage. NL thelibrarian:Invitation (3 Attacks, 3 Skills): Draw 2 cards, and Draw 2 Additional Cards next turn."
+  },"TheLibrarian:RainbowRush":{
+  "NAME": "Rainbow Rush",
+  "DESCRIPTION": "Deal !D! damage at all enemies. NL Innate, Ethereal"
+  },"TheLibrarian:RipSpace":{
+    "NAME": "Rip Space",
+    "DESCRIPTION": "Deal !D! damage X times. NL Deal !M! more damage each time."
+  },"TheLibrarian:SteamTransportMachine":{
+    "NAME": "Steam Transport Machine",
+    "DESCRIPTION": "Each turn, after you draw your hand, draw a card you have the least of."
+  },"TheLibrarian:FerventAdoration":{
+    "NAME": "Fervent Adoration",
+    "DESCRIPTION": "Force an enemy to use it's intent on ALL enemies."
+  },"TheLibrarian:Lamp":{
+    "NAME": "Lamp",
+    "DESCRIPTION": "Gain !B! Block for each attacking enemy, then change the intent of all enemies to attack."
+  },"TheLibrarian:AttentionAndFocus":{
+    "NAME": "Attention and Focus",
+    "DESCRIPTION": "If no attacks were played this turn, gain 20 block, then lose 10 strength for the turn. NL Otherwise, gain 6 block."
+  },"TheLibrarian:Coffin":{
+    "NAME": "Coffin",
+    "DESCRIPTION": "Deal !D! damage. NL Multiply that by !M! if the target is weakened or vulnerable."
+  },"TheLibrarian:SevenBullets":{
+    "NAME": "Seven Bullets",
+    "DESCRIPTION": "Shuffle seven bullets into your deck. Deal 5 damage to every enemy on drawing one. On drawing the seventh..."
+  },"TheLibrarian:SBBullet":{
+    "NAME": "A Bullet",
+    "DESCRIPTION": "Unplayable. On Draw, exhaust and deal 5 damage to all enemies, then increase the damage of the rest of the bullets by 5."
+  },"TheLibrarian:Lament":{
+    "NAME": "Lament",
+    "DESCRIPTION": "Deal !D! damage to all enemies, then apply !M! weak to all enemies."
+  },"TheLibrarian:TokenOfFriendship":{
+    "NAME": "Token Of Friendship",
+    "DESCRIPTION": "Add a Pebble to your hand. When you draw a status, heal !M!."
+  },"TheLibrarian:Scars":{
+    "NAME": "Scars",
+    "DESCRIPTION": "thelibrarian:Anthology: When you take health damage, gain !M! block next turn."
+  },"TheLibrarian:Regret":{
+    "NAME": "Regret",
+    "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damage."
+  },"TheLibrarian:TOFPebble":{
+    "NAME": "Pebble",
+    "DESCRIPTION": "Lose your Friendship. Exhaust. If this card would be discarded, instead place it on the top of your Draw Pile."
+  },"TheLibrarian:EmptyHeartedAxe":{
+    "NAME": "Empty-Hearted Axe",
+    "DESCRIPTION": "Deal !D! Damage minus !M! for each !E! you have."
+  },"TheLibrarian:Spores": {
+    "NAME": "Spores",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, inflict !M! damage and poison on the attacker."
   }
 }

@@ -17,7 +17,7 @@ public class BarrierOfVines extends AbstractDynamicCard {
     /*
      * Wiki-page:TheLibrarian
      *
-     * Defend Gain 5 (8) block.
+     * Gain 8(11) block, apply 1(2) weak to all enemies
      */
 
 

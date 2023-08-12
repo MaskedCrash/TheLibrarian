@@ -168,6 +168,8 @@ public class TheLibrarian extends CustomPlayer {
         retVal.add(DefaultCommonSkill.ID);
         retVal.add(CombatPrep.ID);
         retVal.add(DropBookcase.ID);
+        retVal.add(TokenOfFriendship.ID);
+        retVal.add(TokenOfFriendship.ID);
 
 
 

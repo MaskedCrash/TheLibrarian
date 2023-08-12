@@ -45,6 +45,8 @@ public class Lament extends AbstractDynamicCard {
 
     private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int MAGIC = 1;
+    private static final int MAGIC_UPGRADE = 1;
 
     // /STAT DECLARATION/
 
@@ -53,6 +55,7 @@ public class Lament extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         this.isMultiDamage = true;
+        magicNumber=baseMagicNumber=MAGIC;
     }
 
 
@@ -72,6 +75,7 @@ public class Lament extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(MAGIC_UPGRADE);
         }
     }
 }
